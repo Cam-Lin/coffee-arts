@@ -228,5 +228,12 @@ footer {
         gap: 5%;
         row-gap: 2.5%;
     }
+}
 
+@media only screen and (min-width:768px) {
+    #pricing {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5%;
+        row-gap: 2.5%;
+    }
 }
