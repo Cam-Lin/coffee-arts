@@ -55,7 +55,7 @@ h1 {
 }
 
 .nav-link {
-    margin: 0.15rem 0.5rem;
+    padding: 0.15rem 0.5rem;
     text-decoration: none;
     letter-spacing: 0.05rem;
     color:#D9B589;
@@ -183,6 +183,7 @@ ol {
     list-style: none;
     padding: 0;
     margin-top: 0;
+    height: 12rem;
 }
 
 .price-box ol li {
@@ -217,9 +218,12 @@ footer {
     text-align: right;
     background-color:#401903;
     color: #D9B589;
-    padding-right: 1rem;
     font-size: 12px;
     width: 100%;
+}
+
+footer p {
+    padding-right: 1rem;
 }
 
 @media only screen and (min-width:600px) {
@@ -236,4 +240,22 @@ footer {
         gap: 5%;
         row-gap: 2.5%;
     }
+
+    #nav-bar {
+        flex-direction:row;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #header-title {
+        margin-top: -1rem;
+    }
+
+    #subtitle {
+        margin-top: -2.2rem;
+    } 
 }
