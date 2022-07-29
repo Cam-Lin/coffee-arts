@@ -1,12 +1,14 @@
-* {
+/* {
     border: solid 2px black;
-}
+}*/
 
 body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: Verdana, sans-serif;
     z-index: -1;
     width: 100vw;
@@ -19,6 +21,7 @@ header {
     height: 6rem;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
     background-color: #401903;
     color: #F26A1B;
     z-index: 1;
@@ -47,27 +50,31 @@ h1 {
 
 #nav-bar {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-right: 1rem;
 }
 
 .nav-link {
-    margin: 0 0.5rem;
+    margin: 0.15rem 0.5rem;
     text-decoration: none;
     letter-spacing: 0.05rem;
     color:#D9B589;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
 }
 
 #description-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 6.25rem 0 0 0;
-    padding: 0 2rem;
+    margin-top: 5.5rem;
     color: #8C4A23;
-    width: 100%;
+    width: 80%;
+}
+
+#description-title {
+    margin-bottom: -1rem;
 }
 
 h3 {
@@ -80,14 +87,15 @@ h2 {
 }
 
 #description-section form h2 {
-    color:#8C4A23;
+    color:#F26A1B;
 }
 
-form {
+#form {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    margin-top: -3rem;
 }
 
 .form-div {
