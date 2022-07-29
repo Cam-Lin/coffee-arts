@@ -151,6 +151,7 @@ label:hover {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    row-gap: 2.5%;
 }
 
 .price-box {
@@ -161,7 +162,7 @@ label:hover {
     text-align: center;
     border: solid 1px #8C1822;
     border-radius: 4px;
-    margin: 1rem 0rem;
+    margin: 0;
     color: #401903;
 }
 
@@ -204,7 +205,7 @@ ol {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-bottom: 3rem;
+    margin: 3rem 0 2rem 0;
 }
 
 #video-section h2 {
@@ -219,4 +220,13 @@ footer {
     padding-right: 1rem;
     font-size: 12px;
     width: 100%;
+}
+
+@media only screen and (min-width:600px) {
+    #pricing {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+        row-gap: 2.5%;
+    }
+
 }
